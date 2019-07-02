@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0016078DC3C78961FE504BF4 /* Pods_Spark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6107E0B7B6CFFC3FDAAA3F1E /* Pods_Spark.framework */; };
 		A5F32B6622CBB1E900061BDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F32B6522CBB1E900061BDC /* AppDelegate.swift */; };
 		A5F32B6822CBB1E900061BDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F32B6722CBB1E900061BDC /* ViewController.swift */; };
 		A5F32B6B22CBB1E900061BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F32B6922CBB1E900061BDC /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6107E0B7B6CFFC3FDAAA3F1E /* Pods_Spark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F32B6222CBB1E900061BDC /* Spark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F32B6522CBB1E900061BDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5F32B6722CBB1E900061BDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		A5F32B6C22CBB1EA00061BDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5F32B6F22CBB1EA00061BDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5F32B7122CBB1EA00061BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC3D52148231E7B3A2B6255E /* Pods-Spark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spark/Pods-Spark.debug.xcconfig"; sourceTree = "<group>"; };
+		B3254DE68AFCBF4FBCD2E4EE /* Pods-Spark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spark.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spark/Pods-Spark.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0016078DC3C78961FE504BF4 /* Pods_Spark.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25DAD3DA8BE798DAED7CE718 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC3D52148231E7B3A2B6255E /* Pods-Spark.debug.xcconfig */,
+				B3254DE68AFCBF4FBCD2E4EE /* Pods-Spark.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A5F32B5922CBB1E900061BDC = {
 			isa = PBXGroup;
 			children = (
 				A5F32B6422CBB1E900061BDC /* Spark */,
 				A5F32B6322CBB1E900061BDC /* Products */,
+				25DAD3DA8BE798DAED7CE718 /* Pods */,
+				D2E02181CE835D50D688880A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = Spark;
 			sourceTree = "<group>";
 		};
+		D2E02181CE835D50D688880A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6107E0B7B6CFFC3FDAAA3F1E /* Pods_Spark.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5F32B7422CBB1EA00061BDC /* Build configuration list for PBXNativeTarget "Spark" */;
 			buildPhases = (
+				AF055FB655078EADF843FD78 /* [CP] Check Pods Manifest.lock */,
 				A5F32B5E22CBB1E900061BDC /* Sources */,
 				A5F32B5F22CBB1E900061BDC /* Frameworks */,
 				A5F32B6022CBB1E900061BDC /* Resources */,
+				C5B5DDDA5CBF42F7FF41F3BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AF055FB655078EADF843FD78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spark-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5B5DDDA5CBF42F7FF41F3BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Spark/Pods-Spark-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spark/Pods-Spark-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A5F32B5E22CBB1E900061BDC /* Sources */ = {
@@ -280,6 +351,7 @@
 		};
 		A5F32B7522CBB1EA00061BDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC3D52148231E7B3A2B6255E /* Pods-Spark.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +370,7 @@
 		};
 		A5F32B7622CBB1EA00061BDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3254DE68AFCBF4FBCD2E4EE /* Pods-Spark.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
