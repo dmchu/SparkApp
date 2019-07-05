@@ -84,20 +84,21 @@ class ContainerController: UIViewController {
         case .Profile:
             print("Show profile")
         case .Inbox:
-            print("Show inbox")
+            print("Show Inbox")
         case .Notifications:
-            print("Show notifications")
+            print("Show Notifications")
         case .Settings:
-            print("Show settings")
+            let controller = SettingsController()
+            controller.username = "Batman"
+            present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
         }
     }
     
     func animateStatusBar() {
-        UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
             self.setNeedsStatusBarAppearanceUpdate()
         }, completion: nil)
     }
-    
 }
 
 extension ContainerController: HomeControllerDelegate {

@@ -8,8 +8,6 @@
 
 import UIKit
 
-private let reuseIdentifier = "MenuOptionCell"
-
 class MenuOptionCell: UITableViewCell {
     
     // MARK: - Properties
@@ -25,7 +23,7 @@ class MenuOptionCell: UITableViewCell {
         let label = UILabel()
         label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 18)
-        label.text = "Sample label"
+        label.text = "Sample text"
         return label
     }()
     

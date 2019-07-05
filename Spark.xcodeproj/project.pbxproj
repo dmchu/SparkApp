@@ -14,6 +14,7 @@
 		A54DAF9822CF07DC00C1BD06 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54DAF9722CF07DC00C1BD06 /* Protocols.swift */; };
 		A54DAF9A22CF157300C1BD06 /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54DAF9922CF157300C1BD06 /* MenuOptionCell.swift */; };
 		A54DAF9F22CFAB1200C1BD06 /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54DAF9E22CFAB1200C1BD06 /* MenuOption.swift */; };
+		A54DAFA122CFD9A800C1BD06 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54DAFA022CFD9A800C1BD06 /* SettingsController.swift */; };
 		A5F32B6622CBB1E900061BDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F32B6522CBB1E900061BDC /* AppDelegate.swift */; };
 		A5F32B6B22CBB1E900061BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F32B6922CBB1E900061BDC /* Main.storyboard */; };
 		A5F32B6D22CBB1EA00061BDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F32B6C22CBB1EA00061BDC /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		A54DAF9722CF07DC00C1BD06 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		A54DAF9922CF157300C1BD06 /* MenuOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuOptionCell.swift; path = Spark/View/MenuOptionCell.swift; sourceTree = SOURCE_ROOT; };
 		A54DAF9E22CFAB1200C1BD06 /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
+		A54DAFA022CFD9A800C1BD06 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		A5F32B6222CBB1E900061BDC /* Spark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F32B6522CBB1E900061BDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5F32B6A22CBB1E900061BDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				A54DAF9122CEE39600C1BD06 /* ContainerController.swift */,
 				A54DAF9322CEE3B300C1BD06 /* HomeController.swift */,
 				A54DAF9522CEE3E300C1BD06 /* MenuController.swift */,
+				A54DAFA022CFD9A800C1BD06 /* SettingsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A54DAFA122CFD9A800C1BD06 /* SettingsController.swift in Sources */,
 				A54DAF9822CF07DC00C1BD06 /* Protocols.swift in Sources */,
 				A54DAF9A22CF157300C1BD06 /* MenuOptionCell.swift in Sources */,
 				A54DAF9F22CFAB1200C1BD06 /* MenuOption.swift in Sources */,
