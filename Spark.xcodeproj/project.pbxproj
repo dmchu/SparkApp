@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0016078DC3C78961FE504BF4 /* Pods_Spark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6107E0B7B6CFFC3FDAAA3F1E /* Pods_Spark.framework */; };
+		A54DAF9222CEE39600C1BD06 /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54DAF9122CEE39600C1BD06 /* ContainerController.swift */; };
+		A54DAF9422CEE3B300C1BD06 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54DAF9322CEE3B300C1BD06 /* HomeController.swift */; };
+		A54DAF9622CEE3E300C1BD06 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54DAF9522CEE3E300C1BD06 /* MenuController.swift */; };
 		A5F32B6622CBB1E900061BDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F32B6522CBB1E900061BDC /* AppDelegate.swift */; };
 		A5F32B6822CBB1E900061BDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F32B6722CBB1E900061BDC /* ViewController.swift */; };
 		A5F32B6B22CBB1E900061BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F32B6922CBB1E900061BDC /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		6107E0B7B6CFFC3FDAAA3F1E /* Pods_Spark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54DAF9122CEE39600C1BD06 /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
+		A54DAF9322CEE3B300C1BD06 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		A54DAF9522CEE3E300C1BD06 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		A5F32B6222CBB1E900061BDC /* Spark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F32B6522CBB1E900061BDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5F32B6722CBB1E900061BDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +55,39 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A54DAF8D22CEE2E000C1BD06 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A54DAF9122CEE39600C1BD06 /* ContainerController.swift */,
+				A54DAF9322CEE3B300C1BD06 /* HomeController.swift */,
+				A54DAF9522CEE3E300C1BD06 /* MenuController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A54DAF8E22CEE2E300C1BD06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		A54DAF8F22CEE2E500C1BD06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = "New Group2";
+			sourceTree = "<group>";
+		};
+		A54DAF9022CEE2E700C1BD06 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		A5F32B5922CBB1E900061BDC = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +109,10 @@
 		A5F32B6422CBB1E900061BDC /* Spark */ = {
 			isa = PBXGroup;
 			children = (
+				A54DAF9022CEE2E700C1BD06 /* Utils */,
+				A54DAF8F22CEE2E500C1BD06 /* Model */,
+				A54DAF8E22CEE2E300C1BD06 /* View */,
+				A54DAF8D22CEE2E000C1BD06 /* Controller */,
 				A5F32B6522CBB1E900061BDC /* AppDelegate.swift */,
 				A5F32B6722CBB1E900061BDC /* ViewController.swift */,
 				A5F32B6922CBB1E900061BDC /* Main.storyboard */,
@@ -206,8 +249,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A54DAF9622CEE3E300C1BD06 /* MenuController.swift in Sources */,
+				A54DAF9422CEE3B300C1BD06 /* HomeController.swift in Sources */,
 				A5F32B6822CBB1E900061BDC /* ViewController.swift in Sources */,
 				A5F32B6622CBB1E900061BDC /* AppDelegate.swift in Sources */,
+				A54DAF9222CEE39600C1BD06 /* ContainerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
