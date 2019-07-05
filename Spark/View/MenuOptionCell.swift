@@ -8,6 +8,8 @@
 
 import UIKit
 
+private let reuseIdentifier = "MenuOptionCell"
+
 class MenuOptionCell: UITableViewCell {
     
     // MARK: - Properties
@@ -16,8 +18,15 @@ class MenuOptionCell: UITableViewCell {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
         iv.clipsToBounds = true
-        iv.backgroundColor = .blue
         return iv
+    }()
+    
+    let descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.font = UIFont.systemFont(ofSize: 18)
+        label.text = "Sample label"
+        return label
     }()
     
     // MARK: - Init
@@ -26,6 +35,7 @@ class MenuOptionCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         backgroundColor = .darkGray
+        selectionStyle = .none
         
         addSubview(iconImageView)
         iconImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -33,6 +43,11 @@ class MenuOptionCell: UITableViewCell {
         iconImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 12).isActive = true
         iconImageView.heightAnchor.constraint(equalToConstant: 24).isActive = true
         iconImageView.widthAnchor.constraint(equalToConstant: 24).isActive = true
+        
+        addSubview(descriptionLabel)
+        descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
+        descriptionLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        descriptionLabel.leftAnchor.constraint(equalTo: iconImageView.rightAnchor, constant: 12).isActive = true
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -41,7 +56,4 @@ class MenuOptionCell: UITableViewCell {
     
     // MARK: - Handlers
     
-    
-
-
 }
