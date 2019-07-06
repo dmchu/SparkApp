@@ -77,8 +77,7 @@
 			children = (
 				A54DAF9922CF157300C1BD06 /* MenuOptionCell.swift */,
 			);
-			name = View;
-			path = "New Group1";
+			path = View;
 			sourceTree = "<group>";
 		};
 		A54DAF9022CEE2E700C1BD06 /* Utils */ = {
