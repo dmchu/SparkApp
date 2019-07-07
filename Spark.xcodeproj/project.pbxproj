@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0016078DC3C78961FE504BF4 /* Pods_Spark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6107E0B7B6CFFC3FDAAA3F1E /* Pods_Spark.framework */; };
+		6468889922D18F0F007639B6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6468889822D18F0F007639B6 /* SWRevealViewController.m */; };
 		A5F32B6622CBB1E900061BDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F32B6522CBB1E900061BDC /* AppDelegate.swift */; };
 		A5F32B6822CBB1E900061BDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F32B6722CBB1E900061BDC /* ViewController.swift */; };
 		A5F32B6B22CBB1E900061BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F32B6922CBB1E900061BDC /* Main.storyboard */; };
@@ -17,6 +18,9 @@
 
 /* Begin PBXFileReference section */
 		6107E0B7B6CFFC3FDAAA3F1E /* Pods_Spark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6468889622D18F0F007639B6 /* Spark-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spark-Bridging-Header.h"; sourceTree = "<group>"; };
+		6468889722D18F0F007639B6 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		6468889822D18F0F007639B6 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		A5F32B6222CBB1E900061BDC /* Spark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F32B6522CBB1E900061BDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5F32B6722CBB1E900061BDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6468889522D18EB8007639B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6468889722D18F0F007639B6 /* SWRevealViewController.h */,
+				6468889822D18F0F007639B6 /* SWRevealViewController.m */,
+				6468889622D18F0F007639B6 /* Spark-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A5F32B5922CBB1E900061BDC = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +84,7 @@
 		A5F32B6422CBB1E900061BDC /* Spark */ = {
 			isa = PBXGroup;
 			children = (
+				6468889522D18EB8007639B6 /* Supporting Files */,
 				A5F32B6522CBB1E900061BDC /* AppDelegate.swift */,
 				A5F32B6722CBB1E900061BDC /* ViewController.swift */,
 				A5F32B6922CBB1E900061BDC /* Main.storyboard */,
@@ -122,6 +137,7 @@
 				TargetAttributes = {
 					A5F32B6122CBB1E900061BDC = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -208,6 +224,7 @@
 			files = (
 				A5F32B6822CBB1E900061BDC /* ViewController.swift in Sources */,
 				A5F32B6622CBB1E900061BDC /* AppDelegate.swift in Sources */,
+				6468889922D18F0F007639B6 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +371,7 @@
 			baseConfigurationReference = AC3D52148231E7B3A2B6255E /* Pods-Spark.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNL9XGJVF7;
 				INFOPLIST_FILE = Spark/Info.plist;
@@ -363,7 +381,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dchuveev.Spark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_OBJC_BRIDGING_HEADER = "Spark/Supporting Files/Spark-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -373,6 +393,7 @@
 			baseConfigurationReference = B3254DE68AFCBF4FBCD2E4EE /* Pods-Spark.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNL9XGJVF7;
 				INFOPLIST_FILE = Spark/Info.plist;
@@ -382,7 +403,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dchuveev.Spark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_OBJC_BRIDGING_HEADER = "Spark/Supporting Files/Spark-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
