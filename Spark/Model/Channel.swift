@@ -1,5 +1,5 @@
 //
-//  MessageService.swift
+//  Channel.swift
 //  Spark
 //
 //  Created by Dmitry Chuveev on 7/11/19.
@@ -7,11 +7,3 @@
 //
 
 import Foundation
-
-class MessageService {
-    
-    static let instance = MessageService()
-    
-    
-    
-}
