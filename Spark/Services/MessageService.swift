@@ -15,6 +15,7 @@ class MessageService {
     static let instance = MessageService()
     
     var channels = [Channel]()
+    var selectedChannel : Channel?
     
     func findAllChannel(completion: @escaping CompletionHandler) {
         Alamofire.request(URL_GET_CHANNELS, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
@@ -35,9 +36,9 @@ class MessageService {
                     print(self.channels[0].channelTitle)
                     completion(true)
                 }
-//                } else {
-//                    completion(false)
-//                    debugPrint(response.result.error as Any)
+            } else {
+                completion(false)
+                debugPrint(response.result.error as Any)
                 
                 // Using swift without SwiftyJSON see also Model/Channel
                 
@@ -46,12 +47,15 @@ class MessageService {
 //                } catch let error {
 //                    debugPrint(error as Any)
 //                }
-                
 
-            } else {
-                completion(false)
-                debugPrint(response.result.error as Any)
+//            } else {
+//                completion(false)
+//                debugPrint(response.result.error as Any)
             }
         }
+    }
+    
+    func clearChannels() {
+        channels.removeAll()
     }
 }
