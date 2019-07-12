@@ -24,33 +24,34 @@ class MessageService {
                 guard let data = response.data else { return }
                 
                 //  Parsing JSON with SwiftyJSON
-//                if let json = JSON(data: data).array {
-//                    for item in json {
-//                        let name = item["name"].stringValue
-//                        let channelDescription = item["description"].stringValue
-//                        let id = item["_id"].stringValue
-//                        let channel = Channel(channelTitle: name, channelDescription: channelDescription, id: id)
-//                        self.channels.append(channel)
-//                    }
-//                    print(self.channels[0].channelTitle)
-//                    completion(true)
+                if let json = JSON(data: data).array {
+                    for item in json {
+                        let name = item["name"].stringValue
+                        let channelDescription = item["description"].stringValue
+                        let id = item["_id"].stringValue
+                        let channel = Channel(channelTitle: name, channelDescription: channelDescription, id: id)
+                        self.channels.append(channel)
+                    }
+                    print(self.channels[0].channelTitle)
+                    completion(true)
+                }
 //                } else {
 //                    completion(false)
 //                    debugPrint(response.result.error as Any)
                 
                 // Using swift without SwiftyJSON see also Model/Channel
                 
-                do {
-                    self.channels = try JSONDecoder().decode([Channel].self, from: data)
-                } catch let error {
-                    debugPrint(error as Any)
-                }
+//                do {
+//                    self.channels = try JSONDecoder().decode([Channel].self, from: data)
+//                } catch let error {
+//                    debugPrint(error as Any)
+//                }
                 
 
             } else {
                 completion(false)
                 debugPrint(response.result.error as Any)
-                }
             }
         }
     }
+}
