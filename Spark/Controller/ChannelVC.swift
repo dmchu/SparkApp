@@ -32,6 +32,22 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         setupUserInfo()
     }
     
+    @IBAction func addChannelPressed(_ sender: Any) {
+        let addChannel = AddChannelVC()
+        addChannel.modalPresentationStyle = .custom
+        present(addChannel, animated: true, completion: nil)
+    }
+    @IBAction func loginBtnPressed(_ sender: Any) {
+        if AuthService.instance.isLoggedIn {
+            let profile = ProfileVC()
+            profile.modalPresentationStyle = .custom
+            present(profile, animated: true, completion: nil)
+        } else {
+            performSegue(withIdentifier: TO_LOGIN, sender: nil)
+        }
+    }
+    
+    
     @objc func userDataDidChange(_ notif: Notification) {
         setupUserInfo()
     }
@@ -48,16 +64,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    @IBAction func loginBtnPressed(_ sender: Any) {
-        if AuthService.instance.isLoggedIn {
-            // Show profile page
-            let profile = ProfileVC()
-            profile.modalPresentationStyle = .custom
-            present(profile, animated: true, completion: nil)
-        } else {
-            performSegue(withIdentifier: TO_LOGIN, sender: nil)
-        }
-    }
+
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "channelCell", for: indexPath) as? ChannelCell {
