@@ -27,6 +27,7 @@
 		64FA6AF322D76543007F2861 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FA6AF122D76543007F2861 /* ProfileVC.xib */; };
 		64FA6AF622D78EAC007F2861 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FA6AF522D78EAC007F2861 /* MessageService.swift */; };
 		64FA6AF822D78F4F007F2861 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FA6AF722D78F4F007F2861 /* Channel.swift */; };
+		64FE8DDF22D8B2A70047E9CB /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FE8DDE22D8B2A70047E9CB /* SocketService.swift */; };
 		A5B5812C22D554BB009D6D01 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B5812B22D554BB009D6D01 /* CircleImage.swift */; };
 		A5F32B6622CBB1E900061BDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F32B6522CBB1E900061BDC /* AppDelegate.swift */; };
 		A5F32B6B22CBB1E900061BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F32B6922CBB1E900061BDC /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		64FA6AF122D76543007F2861 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		64FA6AF522D78EAC007F2861 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		64FA6AF722D78F4F007F2861 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		64FE8DDE22D8B2A70047E9CB /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		A5B5812B22D554BB009D6D01 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		A5F32B6222CBB1E900061BDC /* Spark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F32B6522CBB1E900061BDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				6432B07E22D45DC400E0948E /* AuthService.swift */,
 				6432B08222D4D04200E0948E /* UserDataService.swift */,
 				64FA6AF522D78EAC007F2861 /* MessageService.swift */,
+				64FE8DDE22D8B2A70047E9CB /* SocketService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64FE8DDF22D8B2A70047E9CB /* SocketService.swift in Sources */,
 				64FA6AF222D76543007F2861 /* ProfileVC.swift in Sources */,
 				64182F9F22D83C2E0070D098 /* ChannelCell.swift in Sources */,
 				646888A022D197D6007639B6 /* ChannelVC.swift in Sources */,
