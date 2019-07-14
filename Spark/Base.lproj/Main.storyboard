@@ -108,7 +108,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:33 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWj-yz-JGQ">
-                                                    <rect key="frame" x="143" y="11.5" width="59" height="17"/>
+                                                    <rect key="frame" x="145" y="11.5" width="60.5" height="17"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -122,13 +122,12 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="BN8-2N-ipE" secondAttribute="trailing" constant="12" id="2wF-NC-ElD"/>
-                                                <constraint firstAttribute="trailing" secondItem="sWj-yz-JGQ" secondAttribute="trailing" constant="173" id="3JA-lj-A0Z"/>
-                                                <constraint firstItem="sWj-yz-JGQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rxL-XG-GUa" secondAttribute="trailing" constant="8" symbolic="YES" id="Ebl-ca-DmU"/>
                                                 <constraint firstItem="BN8-2N-ipE" firstAttribute="leading" secondItem="cv5-4G-d5G" secondAttribute="trailing" constant="12" id="Jbv-WK-sHs"/>
                                                 <constraint firstItem="sWj-yz-JGQ" firstAttribute="centerY" secondItem="rxL-XG-GUa" secondAttribute="centerY" id="NEQ-7P-uCq"/>
                                                 <constraint firstItem="cv5-4G-d5G" firstAttribute="top" secondItem="e6m-Tn-2Ne" secondAttribute="topMargin" id="RYf-k9-1lw"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="BN8-2N-ipE" secondAttribute="bottom" constant="15" id="Xxg-7I-GfF"/>
                                                 <constraint firstItem="BN8-2N-ipE" firstAttribute="top" secondItem="rxL-XG-GUa" secondAttribute="bottom" constant="8" id="llS-0u-bCt"/>
+                                                <constraint firstItem="sWj-yz-JGQ" firstAttribute="leading" secondItem="rxL-XG-GUa" secondAttribute="trailing" constant="10" id="mOm-Jd-F70"/>
                                                 <constraint firstItem="cv5-4G-d5G" firstAttribute="leading" secondItem="e6m-Tn-2Ne" secondAttribute="leadingMargin" id="pfz-Ao-Sw2"/>
                                                 <constraint firstItem="rxL-XG-GUa" firstAttribute="leading" secondItem="cv5-4G-d5G" secondAttribute="trailing" constant="12" id="r9j-cw-cIl"/>
                                                 <constraint firstItem="rxL-XG-GUa" firstAttribute="top" secondItem="cv5-4G-d5G" secondAttribute="top" id="t0R-El-I8l"/>
