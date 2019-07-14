@@ -143,6 +143,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nx3-TD-Vaf">
+                                <rect key="frame" x="8" y="623" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -150,12 +156,14 @@
                             <constraint firstItem="osp-3l-fkh" firstAttribute="top" secondItem="xO3-dF-6eX" secondAttribute="bottom" id="A8E-Oe-oUd"/>
                             <constraint firstItem="OsM-1v-VBm" firstAttribute="bottom" secondItem="2J0-77-Mwx" secondAttribute="bottom" id="CnU-V3-u5b"/>
                             <constraint firstItem="OsM-1v-VBm" firstAttribute="top" secondItem="osp-3l-fkh" secondAttribute="bottom" constant="30" id="MSQ-Gy-i9o"/>
+                            <constraint firstItem="OsM-1v-VBm" firstAttribute="top" secondItem="Nx3-TD-Vaf" secondAttribute="bottom" constant="4" id="Q4E-mI-G7b"/>
                             <constraint firstItem="xO3-dF-6eX" firstAttribute="top" secondItem="zUS-b2-VCp" secondAttribute="top" id="RfI-N3-d0n"/>
                             <constraint firstItem="xO3-dF-6eX" firstAttribute="leading" secondItem="2J0-77-Mwx" secondAttribute="leading" id="V7S-hh-ejY"/>
                             <constraint firstItem="2J0-77-Mwx" firstAttribute="trailing" secondItem="osp-3l-fkh" secondAttribute="trailing" id="VbW-5G-aZ4"/>
                             <constraint firstItem="xO3-dF-6eX" firstAttribute="trailing" secondItem="2J0-77-Mwx" secondAttribute="trailing" id="WJT-RN-BWp"/>
                             <constraint firstItem="mII-gL-dLq" firstAttribute="centerY" secondItem="OsM-1v-VBm" secondAttribute="centerY" id="e4K-bm-0Cf"/>
                             <constraint firstItem="2J0-77-Mwx" firstAttribute="trailing" secondItem="OsM-1v-VBm" secondAttribute="trailing" id="qiT-5m-YDd"/>
+                            <constraint firstItem="Nx3-TD-Vaf" firstAttribute="leading" secondItem="2J0-77-Mwx" secondAttribute="leading" constant="8" id="sVM-ku-adC"/>
                             <constraint firstItem="2J0-77-Mwx" firstAttribute="trailing" secondItem="mII-gL-dLq" secondAttribute="trailing" constant="8" id="t6B-ub-7CX"/>
                             <constraint firstItem="OsM-1v-VBm" firstAttribute="leading" secondItem="2J0-77-Mwx" secondAttribute="leading" id="vfb-gU-sml"/>
                         </constraints>
@@ -167,6 +175,7 @@
                         <outlet property="messageTxtBox" destination="OsM-1v-VBm" id="g8x-3H-ISY"/>
                         <outlet property="sendBtn" destination="mII-gL-dLq" id="TCQ-Ka-oYy"/>
                         <outlet property="tableView" destination="osp-3l-fkh" id="Qk2-OT-por"/>
+                        <outlet property="typingUsersLbl" destination="Nx3-TD-Vaf" id="aGq-vp-fmX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JGn-cl-Eg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
